@@ -506,9 +506,12 @@
         </div>
       </div>
         <div class="footer-contacts-wrap">
-          <p class="social-text">Subscribe</p>
-          <label for="user-email-footer" class="user-email-footer"></label>
-          <input type="email" class="footer-input" placeholder="E-mail"/>
+          <form class="footer-form">
+            <p class="social-text">Subscribe</p>
+            <label for="user-email-footer" aria-label="footer email" class="user-email-footer"></label>
+            <input type="email" class="footer-input" name="footer-email" id="footer-email" placeholder="E-mail"/>
+<button type="submit" class="btn-footer-submit"></button>
+          </form>
       </div>
     </div>
     </footer>
