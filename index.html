@@ -505,11 +505,12 @@
             </ul>
           </div>
         </div>
-        <div class="footer-contacts-wrap">
-          <form class="footer-form">
-            <p class="social-text">Subscribe</p>
 
-            <div class="footer-input-button-row">
+        <div class="footer-contacts-wrap">
+          <p class="social-text-form">Subscribe</p>
+          <form class="footer-form">
+            <label class="label-form-footer">
+              <!-- <div class="footer-input-button-row"> -->
               <input
                 type="email"
                 class="footer-input"
@@ -517,10 +518,14 @@
                 id="footer-email"
                 placeholder="E-mail"
               />
-              <button type="submit" class="btn-footer-submit">
-                <span class="modal-button-text">Subscribe</span>
-              </button>
-            </div>
+            </label>
+            <button type="submit" class="btn-footer-submit">
+              <span class="modal-button-text">Subscribe</span>
+              <svg width="24" height="24" class="subscribe-icon">
+                <use href="./images/icons.svg#icon-subscribe"></use>
+              </svg>
+            </button>
+            <!-- </div> -->
           </form>
         </div>
       </div>
