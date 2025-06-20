@@ -689,9 +689,8 @@ team-title
   flex: 1;
 }
 
-.subscribe-icon {
+.icon-subscribe {
   margin-left: 16px;
-  fill: #fff;
 }
 
 /* MODAL */
@@ -710,7 +709,7 @@ team-title
 }
 
 .open-modal {
-  opacity: 0;
+  opacity: 1;
   pointer-events: auto;
   visibility: visible;
 }
