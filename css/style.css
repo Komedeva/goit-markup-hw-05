@@ -720,7 +720,7 @@ team-title
   padding: 72px 24px 24px 24px;
 }
 
-.modal-close {
+/* .modal-close {
   background-color: #e7e9fc;
   position: absolute;
   top: 24px;
@@ -747,6 +747,37 @@ team-title
 .modal-close:hover .modal-close-icon,
 .modal-close:focus .modal-close-icon {
   fill: #ffffff;
+} */
+
+.modal-close {
+  background-color: #e7e9fc;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-icon {
+  fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  background-color: #404bbf;
+  border: none;
+  color: #ffffff;
 }
 
 .modal-close-icon {
@@ -822,7 +853,7 @@ team-title
 .modal-input-cover {
   position: relative;
 }
-
+/**TEXTAREA**/
 .modal-textarea {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
@@ -853,17 +884,6 @@ team-title
   border-color: #4d5ae5;
 }
 
-.modal-button {
-  margin: 8px 13px 8px 13px;
-  border-radius: 4px;
-  padding: 16px 32px;
-  width: 169px;
-  height: 56px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background: #4d5ae5;
-  border: none;
-}
-
 .modal-button-text {
   font-weight: 500;
   font-size: 16px;
@@ -871,6 +891,11 @@ team-title
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
+}
+
+/**CHECKBOX**/
+.modal-field-chekbox {
+  margin-bottom: 24px;
 }
 
 .check-custom {
@@ -884,6 +909,10 @@ team-title
   align-items: center;
   justify-content: center;
   fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
 }
 
 .check-text {
@@ -893,10 +922,40 @@ team-title
   color: rgba(142, 143, 153, 1);
   display: flex;
   align-items: center;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
 }
 
-.modal-check:checked + .check-text .check-custom {
+.visually-hidden:checked + .check-text .check-custom {
   border: none;
   background-color: rgba(64, 75, 191, 1);
   fill: #fff;
+}
+
+.visually-hidden:checked + .check-text .check-custom {
+  fill: #f4f4fd;
+}
+
+.checkbox-link {
+  color: #4d5ae5;
+}
+
+.modal-button {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #4d5ae5;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  margin: 8px 13px 8px 13px;
+  border-radius: 4px;
+  padding: 16px 32px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
