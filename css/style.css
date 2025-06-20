@@ -654,6 +654,36 @@ team-title
   color: #fff;
 }
 
+.btn-footer-submit {
+  border: none;
+  border-radius: 4px;
+  padding: 8px 24px;
+  width: 165px;
+  height: 40px;
+  background: #4d5ae5;
+  padding-left: 24px;
+  padding-right: 64px;
+  padding-top: 8px;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 100%;
+  padding-left: 80px;
+  padding-right: 159px;
+}
+
+.footer-input-button-row {
+  display: flex;
+  gap: 8px;
+}
+
+.footer-input {
+  flex: 1;
+}
+
 /* MODAL */
 .backdrop {
   width: 100%;
